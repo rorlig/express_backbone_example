@@ -1,0 +1,69 @@
+<!doctype html>
+    <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+    <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+    <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <html lang="en" class="no-js"> <!--<![endif]-->
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+            <title>With a little help from my friends!!</title>
+            <meta name="description" content="Share Your Rent and See What Others are paying!!" />
+            <meta name="author" content="" />
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+            <link rel="icon-user" href="/glyphicons-halflings.png" />
+            <script data-main="javascripts/main.js" src="javascripts/require.js"></script>
+
+
+            <!-- end of search filter template -->
+
+
+            <link href="stylesheets/metro-bootstrap.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+            </head>
+            <section id="content" style="margin: 40px">
+                <div class="row">
+                    <input style="margin: 10px" type="text" placeholder="Enter Title" id="newItemTitle" />
+                    <input class="btn add" name="add" type="submit" value="Add" id="add"/>
+
+                </div>
+                <div id="itemList">
+                </div>
+
+
+            </section>
+
+
+            <script data-main="js/main.js" src="js/require.js"></script>
+
+
+            <script id="itemTemplate" type="text/template">
+
+
+                <div class="row">
+
+
+                    <div class="divItem" data-id={{_id}}>
+                        <input style="margin: 10px" type="text" value="{{title}}" class="titleText" />
+                        <input class="btn delete" name="delete" type="submit" value="Delete"/>
+                        <input class="btn save" name="save" type="submit" value="Save"/>
+                    </div>
+                </div>
+            </script>
+        </html>
